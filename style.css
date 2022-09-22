@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    /* position: absolute; */
+    background-image: url(./Images/realistic-film-strip-background-with-clapper-board_1017-31191.jpg);
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+.question{
+    height: 100vh;
+    width: 100%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    filter: none;
+    color: #f0f4fa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box {
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    text-align: center;
+}  
+.box li{
+    width: 270px;
+    background-color: black;
+    text-align: center;
+    list-style: none;
+    margin-top: 1%;
+}    
+.box li img{
+    width:200px;
+    height: 250px;
+    margin-top: 5%;
+}
+.loader{
+    height: 100%;
+    width: 100%;
+    background-image: url("./Images/loader.gif");
+    background-position-x: 50%;
+    background-position-y: 50% ;
+    background-repeat: no-repeat;   
+    display: none;
+}
+
+
+@media(max-width:768px)
+{
+    .main{
+        height: max-content;
+        background: none;
+        background-color: black;
+    }
+    .box{
+        height: max-content;
+        background-color: black;
+    }
+    .box li{
+        width: 90%;
+    }
+    .box li img{
+        margin-top: 5%;
+        width: 70%;
+    }
+}
